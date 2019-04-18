@@ -225,7 +225,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
+                    android:background="@drawable/circlebackgroundbluegrey"
                     android:padding="10dp"
                     android:src="@drawable/ic_person_black_24dp" />
 
@@ -270,15 +270,15 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
+                    android:background="@drawable/circlebackgroundlime"
                     android:padding="10dp"
-                    android:src="@drawable/ic_person_black_24dp" />
+                    android:src="@drawable/ic_file_download_black_24dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="@string/additional_info"
+                    android:text="Download"
                     android:textStyle="bold" />
 
                 <View
@@ -292,7 +292,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="Enter Projects and other information"
+                    android:text="Select Template to create PDF"
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
