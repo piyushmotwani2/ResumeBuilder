@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Resume Builder</string>
+    <string name="welcome">Start creating your Perfect Resume</string>
+    <string name="basic_profile">Basic Profile</string>
+    <string name="basic_details">Enter Basic details</string>
+    <string name="education">Education</string>
+    <string name="edu_detail">Enter your Eductaion details</string>
+    <string name="Jobs">Jobs/Internships</string>
+    <string name="previous">Enter Previous experiences</string>
+    <string name="skills">Skills</string>
+    <string name="skill_detail">Enter your skills</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="view">View</string>
+    <string name="update">Update</string>
+    <string name="school_college">School/College</string>
+    <string name="year_of_passing">Year of Passing</string>
+    <string name="percentage_cgpa">Percentage/CGPA</string>
+    <string name="course_studied">Course Studied</string>
+    <string name="years">Years</string>
+</resources>
