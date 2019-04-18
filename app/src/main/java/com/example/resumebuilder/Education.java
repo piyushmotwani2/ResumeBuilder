@@ -62,11 +62,11 @@ public class Education extends AppCompatActivity {
         }
     }
 
-    /*public void confirmInput(View v) {
+    public void confirmInput(View v) {
         if (!validateschool() | !validatecourse() | !validateyear()) {
             return;
         }
-        boolean isInserted = mydb.insertData(textInputSchool.getEditText().getText().toString(),textInputCourse.getEditText().getText().toString(),textInputYear.getEditText().getText().toString());
+        boolean isInserted = mydb.insertData1(textInputSchool.getEditText().getText().toString(),textInputYear.getEditText().getText().toString(),textInputCourse.getEditText().getText().toString());
         if(isInserted==true)
             Toast.makeText(Education.this,"Data Inserted",Toast.LENGTH_SHORT).show();
         else
@@ -82,9 +82,9 @@ public class Education extends AppCompatActivity {
 
         StringBuffer buffer = new StringBuffer();
         while (res.moveToNext()){
-            buffer.append("School " + res.getString(4) + "\n");
-            buffer.append("Course: " + res.getString(14) + "\n");
-            buffer.append("Year: " + res.getString(13) + "\n\n");
+            buffer.append("School " + res.getString(5) + "\n");
+            buffer.append("Course: " + res.getString(6) + "\n");
+            buffer.append("Year: " + res.getString(7) + "\n\n");
         }
 
         showMessage("Data",buffer.toString());
@@ -97,7 +97,7 @@ public class Education extends AppCompatActivity {
         builder.show();
     }
 
-    public void Updatedata(View v){
+    /*public void Updatedata(View v){
         boolean isUpdated = mydb.updateData1(textInputSchool.getEditText().getText().toString(),textInputCourse.getEditText().getText().toString(),textInputYear.getEditText().getText().toString(),textInputUpdate.getEditText().getText().toString());
         if (isUpdated==true)
             Toast.makeText(Education.this,"Data Updated",Toast.LENGTH_SHORT).show();

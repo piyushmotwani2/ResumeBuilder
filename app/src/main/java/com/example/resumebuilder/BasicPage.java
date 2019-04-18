@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Toast;
 
 public class BasicPage extends AppCompatActivity {
-    final String TAG4 = "Basic";
     private TextInputLayout textInputEmail;
     private TextInputLayout textInputName;
     private TextInputLayout textInputPhone;
@@ -20,11 +19,8 @@ public class BasicPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(TAG4,"Basic3");
         super.onCreate(savedInstanceState);
-        Log.d(TAG4,"Basic4");
         setContentView(R.layout.activity_basic_page);
-        Log.d(TAG4,"Basic5");
 
         textInputName = findViewById(R.id.text_input_name);
         textInputEmail = findViewById(R.id.text_input_email);
@@ -108,12 +104,12 @@ public class BasicPage extends AppCompatActivity {
             buffer.append("Name: " + res.getString(0) + "\n");
             buffer.append("Email: " + res.getString(1) + "\n");
             buffer.append("Phone No.: " + res.getString(2) + "\n");
-            buffer.append("Address: " + res.getString(3) + "\n\n");
+            buffer.append("Address: " + res.getString(3) + "\n");
         }
 
         showMessage("Data",buffer.toString());
     }
-    public void showMessage(String title,String message){
+    public void showMessage(String title,String message) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(true);
         builder.setTitle(title);
@@ -121,13 +117,13 @@ public class BasicPage extends AppCompatActivity {
         builder.show();
     }
 
-    public void Updatedata(View v){
+    /*public void Updatedata(View v){
         boolean isUpdated = mydb.updateData(textInputName.getEditText().getText().toString(),textInputEmail.getEditText().getText().toString(),textInputPhone.getEditText().getText().toString(),textInputAddress.getEditText().getText().toString());
         if (isUpdated==true)
             Toast.makeText(BasicPage.this,"Data Updated",Toast.LENGTH_SHORT).show();
         else
             Toast.makeText(BasicPage.this,"Data Not Updated",Toast.LENGTH_SHORT).show();
 
-    }
+    }*/
 
 }
